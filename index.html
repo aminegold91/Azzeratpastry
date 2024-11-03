@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../images/Azzerat.webp">
+  <title>azzeratpastry</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- شريط التنقل -->
+  <header>
+    <div class="btn">
+      <i class='bx bx-menu'></i>
+    </div>
+    <nav id="nav">
+      <a href="#about">من نحن</a>
+      <a href="#gallery">معرض الصور</a>
+      <a href="#testimonials">آراء العملاء</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+    <div class="list-menu">
+      <a href="#about">من نحن</a>
+      <a href="#gallery">معرض الصور</a>
+      <a href="#testimonials">آراء العملاء</a>
+      <a href="#contact">تواصل معنا</a>
+    </div>
+    <div class="logo">
+        <img src="./images/azzerat.webp" alt="">
+    </div>
+  </header>
+
+  <!-- الصفحة الرئيسية -->
+  <section class="hero">
+    <h2>ابدع في تحضير الحلويات</h2>
+    <p>نقدم لكم أشهى وأرقى أنواع الحلويات المصممة بأحدث الصيحات.</p>
+    <button onclick="scrollToSection('contact')">احجز طلبك الآن</button>
+  </section>
+
+  <!-- قسم من نحن -->
+  <section id="about" class="section">
+    <h2>من نحن</h2>
+    <p>أنا صانع حلويات محترف بخبرة تمتد لعشر سنوات. أستخدم أفضل المكونات وأتبع أحدث الصيحات لصنع حلوى استثنائية.</p>
+  </section>
+
+  <!-- معرض الصور -->
+  <section id="gallery" class="section">
+    <h2>معرض الصور</h2>
+    <div class="gallery">
+      
+      <a href="./images/pexels-samis-5687147.jpg">
+        <img src="./images/pexels-samis-5687147.jpg" alt="كيك مميز">
+      </a>
+      
+      <a href="./images/pexels-yasser-hernandez-51320673-7687526.jpg">
+        <img src="./images/pexels-yasser-hernandez-51320673-7687526.jpg" alt="كعكة عيد ميلاد">
+      </a>
+      
+      <a href="./images/pexels-rb-audiovisual-22673943.jpg">
+        <img src="./images/pexels-rb-audiovisual-22673943.jpg" alt="معجنات طازجة">
+      </a>
+      
+      <a href="./images/pexels-rahibyaqubov-17939213.jpg">
+        <img src="./images/pexels-rahibyaqubov-17939213.jpg" alt="شوكولاتة لذيذة">
+      </a>
+      <a href="./images/pexels-76505859-8601851.jpg">
+        <img src="./images/pexels-76505859-8601851.jpg" alt="">
+      </a>
+      <a href="./images/pexels.jpg">
+        <img src="./images/pexels.jpg" alt="">
+      </a>
+      <a href="./images/pexels-foyu-8813992.jpg">
+         <img src="./images/pexels-foyu-8813992.jpg" alt="">
+      </a>
+    </div>
+  </section>
+
+  <!-- قسم آراء العملاء -->
+  <section id="testimonials" class="section">
+    <h2>آراء العملاء</h2>
+    <p>"أجمل كعكة زفاف، كل شيء كان رائعًا!" - سارة</p>
+    <p>"معجنات طازجة ولذيذة، أنصح الجميع بتجربتها." - أحمد</p>
+  </section>
+
+  <!-- قسم التواصل معنا -->
+  <section id="contact" class="section">
+    <h2>تواصل معنا</h2>
+    <div class="footer">
+      <div>
+        <a href="https://wa.me/+212620490769">
+          <i class='bx bxl-whatsapp'></i>
+        </a>
+      </div>
+      <div>
+        <a href="https://www.facebook.com/profile.php?id=100078434830540&mibextid=ZbWKwL">
+          <i class='bx bxl-facebook' ></i>
+        </a>
+      </div>
+      <div>
+        <a href="https://www.instagram.com/azzeratpastry?igsh=ejdveW1ncXFuODM1">
+          <i class='bx bxl-instagram' ></i>
+        </a>
+      </div>
+      <div>
+        <a href="tel:+212620490769">
+          <i class='bx bx-phone'></i>
+        </a>
+      </div>
+    </div>
+<p id="responseMessage"></p>
+  </section>
+  
+  
+
+  <script>
+    function scrollToSection(sectionId) {
+  document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+}  
+    let list = document.querySelector('.list-menu');
+    let menu = document.querySelector('.btn');
+    menu.addEventListener('click', ()=>{
+      list.classList.toggle('active');
+      
+    })
+  </script>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js">
+  </script>
+  
+</body>
+</html>
